@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="AAA" duration-ms="93994" started-at="2019-01-11T19:12:24Z" finished-at="2019-01-11T19:13:58Z">
+  <suite name="AAA" duration-ms="55217" started-at="2019-01-30T14:37:41Z" finished-at="2019-01-30T14:38:37Z">
     <groups>
     </groups>
-    <test name="Quote Page Test" duration-ms="93994" started-at="2019-01-11T19:12:24Z" finished-at="2019-01-11T19:13:58Z">
+    <test name="Quote Page Test" duration-ms="55217" started-at="2019-01-30T14:37:41Z" finished-at="2019-01-30T14:38:37Z">
       <class name="tests.QuotePage_PageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:tests.QuotePage_PageTest@51565ec2]" name="init" is-config="true" duration-ms="4381" started-at="2019-01-11T19:12:24Z" finished-at="2019-01-11T19:12:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:tests.QuotePage_PageTest@28d25987]" name="init" is-config="true" duration-ms="4228" started-at="2019-01-30T14:37:41Z" finished-at="2019-01-30T14:37:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initialize()[pri:10, instance:tests.QuotePage_PageTest@51565ec2]" name="initialize" duration-ms="17326" started-at="2019-01-11T19:12:29Z" finished-at="2019-01-11T19:12:46Z">
+        <test-method status="PASS" signature="initialize()[pri:10, instance:tests.QuotePage_PageTest@28d25987]" name="initialize" duration-ms="10941" started-at="2019-01-30T14:37:46Z" finished-at="2019-01-30T14:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testQuoteFormComponent()[pri:20, instance:tests.QuotePage_PageTest@51565ec2]" name="testQuoteFormComponent" duration-ms="71317" started-at="2019-01-11T19:12:46Z" finished-at="2019-01-11T19:13:57Z">
+        <test-method status="PASS" signature="testQuoteFormComponent()[pri:20, instance:tests.QuotePage_PageTest@28d25987]" name="testQuoteFormComponent" duration-ms="39339" started-at="2019-01-30T14:37:57Z" finished-at="2019-01-30T14:38:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuoteFormComponent -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:tests.QuotePage_PageTest@51565ec2]" name="cleanUp" is-config="true" duration-ms="928" started-at="2019-01-11T19:13:57Z" finished-at="2019-01-11T19:13:58Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:tests.QuotePage_PageTest@28d25987]" name="cleanUp" is-config="true" duration-ms="686" started-at="2019-01-30T14:38:36Z" finished-at="2019-01-30T14:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
