@@ -168,6 +168,10 @@ public final class Step {
 			Passed("Navigating to " + url);
 			return true;
 		}
+		
+		public static String getCurrentURL() {
+			return driver.getCurrentUrl();
+		}
 	}
 
 	public static final class Verify {
