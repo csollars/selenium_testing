@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
+<!-- <parameter name="browser" value="FIREFOX" />
+<parameter name="environment" value="QA" />
+<parameter name="browser" value="${browser}" />
+<parameter name="environment" value="${environment}" /> -->
+
 <suite name="CCQ">	
 	<test name="Landing Page Test">
 		<classes>

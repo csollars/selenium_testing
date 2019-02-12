@@ -1,9 +1,9 @@
 package framework;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -16,9 +16,10 @@ public class BrowserManagement {
 	@BeforeClass(alwaysRun = true)
 	protected final void init() {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-		
 		ChromeOptions options = new ChromeOptions();
-	     options.addArguments("--disable-extensions");
+	    options.addArguments("--disable-extensions");
+	    
+//	    driver = new InternetExplorerDriver();
 		
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
