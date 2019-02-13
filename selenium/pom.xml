@@ -22,6 +22,7 @@
         </excludes>
       </resource>
     </resources>
+    
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -31,6 +32,34 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.1.0</version>
+				<!-- <configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${basedir}/src/main/xml/${suiteFile}</suiteXmlFile>
+					</suiteXmlFiles>
+					<reportsDirectory>${basedir}/test-output</reportsDirectory>
+
+					<properties>
+						<property>
+							<name>browser</name>
+							<value>${browser}</value>
+						</property>
+						<property>
+							<name>device</name>
+							<value>${device}</value>
+						</property>
+						<property>
+							<name>environment</name>
+							<value>${environment}</value>
+						</property>
+					</properties>
+				</configuration> -->
+			</plugin>
+	
     </plugins>
 
   </build>
