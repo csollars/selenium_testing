@@ -13,19 +13,16 @@ public class Updates {
 		By whatWeDoSection = By.xpath("//*[@id='whatIsCCQ']");
 		Step.Verify.content(whatWeDoSection, "What We Do Section", "innerText", "What do we do? We describe your culture by having your leaders select the importance of 28 cultural descriptors we call cultureCues. Then candidates select from the same cultureCues and we calculate the strength of the match. The greater the match the greater the likelihood the candidate will be successful.");
 		
-		By loginButton_landingPage = By.xpath("//*[@id='landing-login-btn']");
-		Step.Action.click(loginButton_landingPage, "Login Button");
+		Step.Action.click(LandingPage.loginButton, "Login Button");
 		
-		String companyAdminEmail = "ts@avengers.com";
+		String companyAdmin = "ts@avengers.com";
 		String ccqAdmin = "jbelcher@riis.com";
 		String password = "Password1";
-		By emailField = By.xpath("//input[@id='login-email']");
-		By passwordField = By.xpath("//input[@id='login-password']");
-		By loginButton_loginPage = By.xpath("//*[@id='login-submit']");
-		Step.Wait.forElementVisible(emailField, "Email Field", 10);
-		Step.Action.typeText(emailField, "Email Field", companyAdminEmail);
-		Step.Action.typeText(passwordField, "Password", password);
-		Step.Action.click(loginButton_loginPage, "Login Button on Login Page");
+
+		Step.Wait.forElementVisible(LoginPage.emailField, "Email Field", 10);
+		Step.Action.typeText(LoginPage.emailField, "Email Field", companyAdmin);
+		Step.Action.typeText(LoginPage.passwordField, "Password", password);
+		Step.Action.click(LoginPage.loginButton_loginPage, "Login Button on Login Page");
 		
 		By candidatesTab = By.xpath("//*[contains(text(),'Candidates')]");
 		Step.Wait.forElementVisible(candidatesTab, "Candidates Tab", 20);

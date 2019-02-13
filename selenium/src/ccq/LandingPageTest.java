@@ -3,11 +3,11 @@ package ccq;
 import org.testng.annotations.Test;
 
 import ccq.Updates;
-import ccq.LandingPage_PO;
+import ccq.LandingPage;
 import framework.Step;
 import framework.TestBase;
 
-public class LandingPage_PT extends TestBase {
+public class LandingPageTest extends TestBase {
 	@Test(priority = 10)
 	public void initialize() {
 		String prodURL = "https://www.cultureconnect.com";
@@ -15,7 +15,7 @@ public class LandingPage_PT extends TestBase {
 		String devURL = "http://34.200.86.155:8443/";
 		
 		Step.Browser.navigateTo(prodURL, 10);
-		Step.Wait.forElementVisible(LandingPage_PO.pageLocator, LandingPage_PO.pageDescription, 20);
+		Step.Wait.forElementVisible(LandingPage.pageLocator, LandingPage.pageDescription, 20);
 	}
 	
 	@Test(priority = 20)
