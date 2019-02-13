@@ -10,7 +10,7 @@
 <suite name="CCQ">	
 	<test name="Updates">
 		<classes>
-			<class name="ccq.Updates" />
+			<class name="ccq.LandingPage_PT" />
 		</classes>
 	</test>
 </suite>

@@ -4,7 +4,8 @@
 <!-- <parameter name="browser" value="FIREFOX" />
 <parameter name="environment" value="QA" />
 <parameter name="browser" value="${browser}" />
-<parameter name="environment" value="${environment}" /> -->
+<parameter name="environment" value="${environment}" />
+<parameter name="remote" value="true" /> -->
 
 <suite name="CCQ">	
 	<test name="Landing Page Test">

@@ -1,11 +1,11 @@
 package ccq;
 
-import framework.TestBase;
 import org.testng.annotations.Test;
 
 import ccq.Updates;
 import ccq.LandingPage_PO;
 import framework.Step;
+import framework.TestBase;
 
 public class LandingPage_PT extends TestBase {
 	@Test(priority = 10)
