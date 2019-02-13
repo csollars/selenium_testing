@@ -1,9 +1,30 @@
 package ccq;
 
 import org.openqa.selenium.By;
-import framework.Step;
+import org.testng.annotations.Test;
 
-public class Updates {
+import framework.Step;
+import framework.TestBase;
+
+public class UpdatesTest extends TestBase {
+	
+	@Test(priority = 10)
+	public void initialize() {
+		String prodURL = "https://www.cultureconnect.com";
+		String localDevURL = "localhost:4200";
+		String devURL = "http://34.200.86.155:8443/";
+		
+		Step.Browser.navigateTo(prodURL, 10);
+		Step.Wait.forElementVisible(LandingPage.pageLocator, LandingPage.pageDescription, 20);
+	}
+	
+	@Test(priority = 20)
+	public void testUpdates() {
+		ccq675();
+		ccq673();
+		ccq674();
+		ccq672();
+	}
 	
 	/**
 	 * When I visit any pages on the site containing the verbiage “Match Percentage”
