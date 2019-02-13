@@ -1,11 +1,9 @@
 package ccq;
 
-import org.testng.annotations.Test;
-
-import ccq.Updates;
 import ccq.LandingPage;
 import framework.Step;
 import framework.TestBase;
+import org.testng.annotations.Test;
 
 public class LandingPageTest extends TestBase {
 	@Test(priority = 10)
@@ -18,14 +16,14 @@ public class LandingPageTest extends TestBase {
 		Step.Wait.forElementVisible(LandingPage.pageLocator, LandingPage.pageDescription, 20);
 	}
 	
-	@Test(priority = 20)
-	public void testUpdates() {
-		Updates test = new Updates();
-		test.ccq675();
-		test.ccq673();
-		test.ccq674();
-		test.ccq672();
-	}
+//	@Test(priority = 20)
+//	public void testUpdates() {
+//		UpdatesTest test = new UpdatesTest();
+//		test.ccq675();
+//		test.ccq673();
+//		test.ccq674();
+//		test.ccq672();
+//	}
 	
 //	@Test(priority = 20)
 //	public void testQuoteFormComponent() {
