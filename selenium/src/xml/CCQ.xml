@@ -8,9 +8,15 @@
 <parameter name="remote" value="true" /> -->
 
 <suite name="CCQ">	
-	<test name="Landing Page Test">
+	<test name="End-to-end Test">
 		<classes>
 			<class name="ccq.LandingPageTest" />
+			<class name="ccq.LoginPageTest" />
+			<class name="ccq.SignUpPageTest" />
+			<class name="ccq.CompanyAdminPageTest" />
+			<class name="ccq.CompanyPageTest" />
+			<class name="ccq.CandidatesPageTest" />
+			<class name="ccq.LeadersPageTest" />
 		</classes>
 	</test>
 </suite>

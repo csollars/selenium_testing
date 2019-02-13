@@ -8,7 +8,7 @@
 <parameter name="remote" value="true" /> -->
 
 <suite name="CCQ">	
-	<test name="Updates">
+	<test name="Updates Test">
 		<classes>
 			<class name="ccq.UpdatesTest" />
 		</classes>
