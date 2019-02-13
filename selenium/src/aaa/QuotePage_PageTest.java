@@ -2,12 +2,12 @@ package aaa;
 
 import org.testng.annotations.Test;
 
-import framework.BrowserManagement;
+import framework.TestBase;
 import framework.Step;
 /**
  * Tests the Quote Page
  */
-public class QuotePage_PageTest extends BrowserManagement {
+public class QuotePage_PageTest extends TestBase {
 
 	@Test(priority = 10)
 	public void initialize() {

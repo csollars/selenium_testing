@@ -25,7 +25,7 @@ public final class Step {
 	static int PASS = 0;
 	static int FAIL = 0;
 	
-	final static WebDriver driver = BrowserManagement.driver;
+	final static WebDriver driver = TestBase.driver;
 	final static JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public static final class Action {
