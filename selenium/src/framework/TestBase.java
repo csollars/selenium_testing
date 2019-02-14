@@ -21,6 +21,7 @@ public class TestBase {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--disable-extensions");
+	    options.addArguments("disable-infobars");
 	    driver = new ChromeDriver();
 	
 //		System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");

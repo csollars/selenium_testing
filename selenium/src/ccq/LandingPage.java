@@ -15,4 +15,6 @@ public class LandingPage {
 	public static final By learnHowButton = By.xpath("//button[@id='learn-how-btn']");
 	public static final By getStartedButton = By.xpath("//button[@id='get-started-btn']");
 	public static final By contactUsButton = By.xpath("//button[@id='contact-us-button']");
+	
+	public static final By whatWeDoSection = By.xpath("//*[@id='whatIsCCQ']");
 }
