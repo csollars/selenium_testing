@@ -7,23 +7,14 @@ import org.testng.annotations.Test;
 
 public class LandingPageTest extends TestBase {
 	@Test(priority = 10)
-	public void initialize() {
+	public static void navigateToLandingPage() {
 		String prodURL = "https://www.cultureconnect.com";
 		String localDevURL = "localhost:4200";
 		String devURL = "http://34.200.86.155:8443/";
 		
-		Step.Browser.navigateTo(prodURL, 10);
+		Step.Browser.navigateTo(localDevURL, 10);
 		Step.Wait.forElementVisible(LandingPage.pageLocator, LandingPage.pageDescription, 20);
 	}
-	
-//	@Test(priority = 20)
-//	public void testUpdates() {
-//		UpdatesTest test = new UpdatesTest();
-//		test.ccq675();
-//		test.ccq673();
-//		test.ccq674();
-//		test.ccq672();
-//	}
 	
 //	@Test(priority = 20)
 //	public void testQuoteFormComponent() {

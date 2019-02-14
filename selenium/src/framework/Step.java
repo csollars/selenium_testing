@@ -12,6 +12,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
@@ -130,6 +131,7 @@ public final class Step {
 			Passed("Selecting " + valueToSelect);
 			return true;
 		}
+		
 		public static boolean selectByValue(By locator, final String elementDescription, final String valueToSelect) {
 			return selectByText(convertByToElement(locator), elementDescription, valueToSelect);
 		}
@@ -150,10 +152,29 @@ public final class Step {
 			Step.Wait.forSeconds(1);
 			return true;
 		}
+		
 		public static boolean clear(By locator, String elementDescription) {
 			return clear(convertByToElement(locator),elementDescription);
 		}
+		
+		public static boolean clickAndDrag(By locator, String elementDescription, int xOffset, int yOffset) {
+			Actions actions = new Actions(driver);
+			WebElement element = convertByToElement(locator);
+			try {
+				actions.clickAndHold(element).moveByOffset(xOffset, yOffset).release().perform();
+			} catch (NullPointerException | NoSuchElementException e) {
+				Failed(elementDescription + "- Not found");
+				return false;
+			} catch (InvalidElementStateException e) {
+				Failed(elementDescription + "- element not interractable");
+				return false;
+			}
+			Passed("Click and Drag " + elementDescription);
+			Step.Wait.forSeconds(1);
+			return true;
+		}
 	}
+	
 
 	public static final class Browser {
 		public static boolean navigateTo(String url, final int timeOutSec) {
@@ -227,10 +248,8 @@ public final class Step {
 			try {
 				Thread.sleep(millis);
 			} catch (InterruptedException e) {
-				Failed("Wait for "+ millis);
 				return false;
 			}
-			Passed("Wait for "+ seconds + " second(s)");
 			return true;
 		}
 		
