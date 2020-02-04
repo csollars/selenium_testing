@@ -3,14 +3,14 @@
 	
 <suite name="AAA">	
     
-    <!-- <parameter name="browser" value="${browser}" />
+    <parameter name="browser" value="${browser}" />
 	<parameter name="environment" value="${environment}" />
-	<parameter name="remote" value="true" /> -->
+	<!-- <parameter name="remote" value="true" /> -->
 
 	<!--  CHROME, FIREFOX, EDGE -->
-	<parameter name="browser" value="CHROME" />
+	<!-- <parameter name="browser" value="CHROME" /> -->
 	<!--  PROD, DEV, LOCALDEV -->
-	<parameter name="environment" value="PROD" />
+	<!-- <parameter name="environment" value="PROD" /> -->
 	
 	<parameter name="appName" value="appName" />
 	
