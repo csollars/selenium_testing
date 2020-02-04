@@ -25,7 +25,6 @@
 	<classpathentry kind="lib" path="C:/Users/chris/git/selenium_testing/selenium/lib/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/chris/git/selenium_testing/selenium/lib/okhttp-3.9.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/chris/git/selenium_testing/selenium/lib/okio-1.13.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/chris/Downloads/ios-server-0.6.5-jar-with-dependencies.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

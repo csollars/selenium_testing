@@ -177,6 +177,18 @@ public final class Step {
 	
 
 	public static final class Browser {
+		public static String getCurrentURL() {
+			return driver.getCurrentUrl();
+		}
+		
+		public static void navigateBack() {
+			driver.navigate().back();
+		}
+		
+		public static void navigateForward() {
+			driver.navigate().forward();
+		}
+		
 		public static boolean navigateTo(String url, final int timeOutSec) {
 			try {
 				driver.get(url);
@@ -190,8 +202,9 @@ public final class Step {
 			return true;
 		}
 		
-		public static String getCurrentURL() {
-			return driver.getCurrentUrl();
+		public static void scrollIntoView(final By locator, final String elementDescription) {
+			WebElement element = driver.findElement(locator);
+			js.executeScript("arguments[0].scrollIntoView", element);
 		}
 	}
 
@@ -204,17 +217,16 @@ public final class Step {
 			} catch (NullPointerException | NoSuchElementException e) {
 				Failed(elementDescription + " - Not found");
 				return false;
-			}
-			catch (StaleElementReferenceException ex) {
+			} catch (StaleElementReferenceException ex) {
 				Failed(elementDescription + " - No longer located in the DOM");
 				return false;
 			}
 			
 			if(element.isDisplayed() && element.isEnabled()) {
-				Passed(elementDescription + " is Visible ");
+				Passed(elementDescription + " is visible ");
 			}
 			else {
-				Failed("Assertion failed");
+				Failed(elementDescription + " is visible");
 				return false;
 			}
 			return true;
