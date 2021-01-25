@@ -8,16 +8,16 @@ How to run the test:
 		2) Enter "http://beust.com/eclipse" in the 'Work with:' field
 		3) Click the checkbox next to TestNG
 		4) Click Next and install the default packages
-3) Import Git project from https://github.com/riis/CultureConnectTests.git
+3) Import Git project from https://github.com/csollars/selenium_testing.git
 4) Create run configuration for the test you wish to run
 	1) Right-Click on the xml name, in the package explorer, for the test you wish to run. (src>xml>xmlName.xml)
 	2) Click Run As > Run Configurations
 	3) Right-Click on TestNG in the left-side panel.
 	4) Click on New Configuration.
-	5) Name the configuration the same name as the test you are going to run (ex: CCQ_Updates)
+	5) Name the configuration the same name as the test you are going to run (ex: QuotePage)
 	6) Click the Suite radio button.
 	7) Click the Browse button and select the xml from your file explorer.
-		C:\Users\yourUserName\git\CultureConnectTests\selenium\src\xml\CCQ_Updates.xml
+		C:\Users\yourUserName\git\selenium_testing\selenium\src\xml\QuotePage.xml
 	8) Click Apply, then Close.
 	9) Press the Run button in Eclipse to start the test.
 	
